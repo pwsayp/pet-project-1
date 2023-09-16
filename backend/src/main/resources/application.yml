@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: pet-project-1
+  data:
+    mongodb:
+      uri: mongodb://username:password@localhost:27017
+      authentication-database: admin
+      database: pet-project-1
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 10030

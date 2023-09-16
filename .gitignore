@@ -1,0 +1,38 @@
+# Ignore IntelliJ IDEA files and directories
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Ignore VS Code files and directories
+.vscode/
+
+# Ignore build output
+/backend/build
+/bin/
+/target/
+
+# Ignore Node.js and npm artifacts
+/frontend/node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore Spring Boot artifacts
+/.mvn/
+
+# Ignore generated files by Angular CLI
+/dist/
+
+# Ignore Gradle-specific files
+.gradle/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore application properties files
+/src/main/resources/application*.yml
+/src/main/resources/application*.properties
+
+# Ignore log files
+/log/
