@@ -36,3 +36,5 @@ Thumbs.db
 
 # Ignore log files
 /log/
+
+gradle-wrapper.jar
