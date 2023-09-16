@@ -1,1 +1,25 @@
-<p>theory works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>AvailableTopics</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let topic of topics">
+                    <td>{{ topic.title }}</td>
+                    <td>
+                        <button type="button" class="btn btn-info m-1" (click)="getTopic(topic.id)">Open</button>
+                        <button type="button" class="btn btn-success m-1" (click)="updateTopic(topic)">Edit</button>
+                        <button type="button" class="btn btn-danger m-1" (click)="deleteTopic(topic.id)">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,7 @@ import { FooterComponent } from './components/main/footer/footer.component';
 import {NgOptimizedImage} from "@angular/common";
 import { TheoryComponent } from './components/content/theory/theory.component';
 import { PractiseComponent } from './components/content/practise/practise.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PractiseComponent } from './components/content/practise/practise.compon
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
