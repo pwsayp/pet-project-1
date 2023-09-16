@@ -22,6 +22,7 @@ yarn-error.log
 
 # Ignore generated files by Angular CLI
 /dist/
+.angular
 
 # Ignore Gradle-specific files
 .gradle/
@@ -36,3 +37,5 @@ Thumbs.db
 
 # Ignore log files
 /log/
+
+gradle-wrapper.jar
