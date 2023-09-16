@@ -9,13 +9,17 @@ import {FormsModule} from "@angular/forms";
 import { HomeComponent } from './components/content/home/home.component';
 import { FooterComponent } from './components/main/footer/footer.component';
 import {NgOptimizedImage} from "@angular/common";
+import { TheoryComponent } from './components/content/theory/theory.component';
+import { PractiseComponent } from './components/content/practise/practise.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    TheoryComponent,
+    PractiseComponent
   ],
   imports: [
     BrowserModule,
