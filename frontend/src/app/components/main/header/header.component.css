@@ -1,9 +1,19 @@
 .Header {
   background-color: #2c2e31;
-  color: #e2b714;
   padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Header p {
-  font-size: 22px;
+.Header button {
+  --mat-badge-text-color: #e2b714;
+  font-size: 24px;
+  filter: invert(95%) sepia(9%) saturate(196%) hue-rotate(17deg) brightness(86%) contrast(93%);
+  transition: filter 0.1ms ease-in-out;
 }
+
+.Header button:hover {
+  filter: invert(67%) sepia(57%) saturate(3229%) hue-rotate(15deg) brightness(116%) contrast(84%);
+}
+

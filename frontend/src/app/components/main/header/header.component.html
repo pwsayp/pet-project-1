@@ -1,5 +1,23 @@
 <div class="Header">
-  <p>
-    Hello!
-  </p>
+  <div class="Common">
+    <button mat-button>Home</button>
+    <button mat-button>Theory</button>
+    <button mat-button>Practice</button>
+  </div>
+
+  <div class="Authentication" *ngIf="true">
+    <button mat-button>
+      <img src="assets/image/authentication.svg" alt="authentication" width="32" height="32" />
+    </button>
+  </div>
+
+  <div class="Account" *ngIf="false">
+    <button mat-button>
+      <img src="assets/image/account.svg" alt="account" width="24" height="24" />
+    </button>
+    <button mat-button>
+      <img src="assets/image/logout.svg" alt="logout" width="24" height="24" />
+    </button>
+  </div>
 </div>
+

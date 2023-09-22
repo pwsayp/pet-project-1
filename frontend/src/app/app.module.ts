@@ -13,6 +13,7 @@ import { PractiseComponent } from './components/content/practise/practise.compon
 import {NgxPaginationModule} from "ngx-pagination";
 import {HeaderComponent} from "./components/main/header/header.component";
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     NgOptimizedImage,
     NgxPaginationModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
