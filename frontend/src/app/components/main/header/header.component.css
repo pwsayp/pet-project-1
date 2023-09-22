@@ -1,9 +1,19 @@
+/*.Header {*/
+/*  background-color: #2c2e31;*/
+/*  padding: 20px;*/
+/*  width: 100%;*/
+/*  color: #e2b714;*/
+/*  font-family: 'Roboto Mono', monospace;*/
+/*  margin: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
 .Header {
   background-color: #2c2e31;
-  padding: 20px;
-  width: 100%;
   color: #e2b714;
-  font-family: 'Roboto Mono', monospace;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 25px;
+}
+
+.Header p {
+  font-size: 22px;
 }

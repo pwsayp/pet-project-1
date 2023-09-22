@@ -1,19 +1,30 @@
-.Footer {
-  background-color: #2c2e31;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  color: #646669;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 0.75em;
-  position: relative;
-  bottom: 0;
-}
+/*.Footer {*/
+/*  background-color: #2c2e31;*/
+/*  text-align: center;*/
+/*  padding: 20px;*/
+/*  width: 100%;*/
+/*  color: #646669;*/
+/*  box-sizing: border-box;*/
+/*  cursor: pointer;*/
+/*  font-size: 0.75em;*/
+/*  position: absolute;*/
+/*  bottom: -100px;*/
+/*  transition: bottom 0.3s ease-in-out;*/
+/*}*/
 
-.textButton {
-  user-select: none;
+/*.textButton {*/
+/*  user-select: none;*/
+/*  color: #646669;*/
+/*  border: none;*/
+/*  appearance: none;*/
+/*}*/
+
+.Footer {
+  text-align: center;
+  background-color: #2c2e31;
   color: #646669;
-  border: none;
-  appearance: none;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
