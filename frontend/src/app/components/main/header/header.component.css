@@ -6,14 +6,19 @@
   align-items: center;
 }
 
-.Header button {
-  --mat-badge-text-color: #e2b714;
+button {
+  color: #d1d0c5;
   font-size: 24px;
   filter: invert(95%) sepia(9%) saturate(196%) hue-rotate(17deg) brightness(86%) contrast(93%);
   transition: filter 0.1ms ease-in-out;
 }
 
-.Header button:hover {
+button:hover {
+  --mat-badge-text-color: #e2b714;
   filter: invert(67%) sepia(57%) saturate(3229%) hue-rotate(15deg) brightness(116%) contrast(84%);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,23 +1,35 @@
 <div class="Header">
   <div class="Common">
-    <button mat-button>Home</button>
-    <button mat-button>Theory</button>
-    <button mat-button>Practice</button>
+    <a href="#">
+      <button mat-button>Home</button>
+    </a>
+    <a href="/theory">
+      <button mat-button>Theory</button>
+    </a>
+    <a href="/practise">
+      <button mat-button>Practice</button>
+    </a>
   </div>
 
   <div class="Authentication" *ngIf="true">
-    <button mat-button>
-      <img src="assets/image/authentication.svg" alt="authentication" width="32" height="32" />
-    </button>
+    <a href="/authentication">
+      <button mat-button>
+        <img src="assets/image/authentication.svg" alt="authentication" width="32" height="32" />
+      </button>
+    </a>
   </div>
 
-  <div class="Account" *ngIf="false">
-    <button mat-button>
-      <img src="assets/image/account.svg" alt="account" width="24" height="24" />
-    </button>
-    <button mat-button>
-      <img src="assets/image/logout.svg" alt="logout" width="24" height="24" />
-    </button>
+  <div class="Account" *ngIf="true">
+    <a href="/account">
+      <button mat-button>
+        <img src="assets/image/account.svg" alt="account" width="24" height="24" />
+      </button>
+    </a>
+    <a href="/logout">
+      <button mat-button>
+        <img src="assets/image/logout.svg" alt="logout" width="24" height="24" />
+      </button>
+    </a>
   </div>
 </div>
 

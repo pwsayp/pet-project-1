@@ -14,6 +14,9 @@ import {NgxPaginationModule} from "ngx-pagination";
 import {HeaderComponent} from "./components/main/header/header.component";
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from "@angular/material/button";
+import { AuthenticationComponent } from './components/content/authentication/authentication.component';
+import { AccountComponent } from './components/content/account/account.component';
+import { LogoutComponent } from './components/content/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import {MatButtonModule} from "@angular/material/button";
     HeaderComponent,
     FooterComponent,
     TheoryComponent,
-    PractiseComponent
+    PractiseComponent,
+    AuthenticationComponent,
+    AccountComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
