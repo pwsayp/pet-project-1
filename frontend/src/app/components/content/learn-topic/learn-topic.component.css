@@ -1,28 +1,28 @@
-.Topics {
+.Elements {
   width: 90vw;
   margin: 0 auto;
   padding: 30px 20px;
 }
 
-.Topics article {
+.Elements article {
   background-color: #646669;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
 }
 
-.Topics h1 {
-  margin: 10px 0 25px 0;
+.Elements p {
+  color: #d1d0c5;
 }
 
-.Topic {
+.Element {
   padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Topic p {
+.Element p {
   padding: 5px;
   font-size: 18px;
   color: #d1d0c5;

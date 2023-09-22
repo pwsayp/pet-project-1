@@ -7,6 +7,7 @@ import {AuthenticationComponent} from "./components/content/authentication/authe
 import {AccountComponent} from "./components/content/account/account.component";
 import {LogoutComponent} from "./components/content/logout/logout.component";
 import {EditTopicComponent} from "./components/content/edit-topic/edit-topic.component";
+import {LearnTopicComponent} from "./components/content/learn-topic/learn-topic.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'account', component: AccountComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'topics/:id/edit', component: EditTopicComponent },
+  { path: 'topics/:id/learn', component: LearnTopicComponent },
 ];
 
 @NgModule({

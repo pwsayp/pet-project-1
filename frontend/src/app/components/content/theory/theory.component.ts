@@ -21,7 +21,7 @@ export class TheoryComponent implements OnInit {
     this.listTopics()
   }
 
-  getTopic(id: number) {
+  getTopic(id: string) {
     this.topicsService.getTopicById(id).subscribe((result: ITopic) => {
       this.topic = result;
     })

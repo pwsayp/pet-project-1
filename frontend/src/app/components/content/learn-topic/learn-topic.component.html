@@ -1,19 +1,16 @@
-<div class="Topics">
-  <article *ngFor="let topic of topics">
-    <div class="Topic">
-      <p>{{ topic.title }}</p>
+<div class="Elements">
+  <article *ngFor="let element of topic.elements; let i = index">
+    <div class="Element">
+      <div class="Description">
+        <p>{{ i + 1 }}.{{ element }}</p>
+      </div>
       <div class="Actions">
-        <a href="/topics/{{ topic.id }}/learn">
-          <button mat-button>
-            <img src="assets/image/in.svg" alt="account" width="20" height="20"/>
-          </button>
-        </a>
         <a href="/topics/{{ topic.id }}/edit">
           <button mat-button>
             <img src="assets/image/edit.svg" alt="account" width="24" height="24"/>
           </button>
         </a>
-        <button mat-button (click)="deleteTopic(topic.id)">
+        <button mat-button>
           <img src="assets/image/trash-bin.svg" alt="account" width="24" height="24"/>
         </button>
       </div>

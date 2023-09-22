@@ -18,6 +18,7 @@ import { AuthenticationComponent } from './components/content/authentication/aut
 import { AccountComponent } from './components/content/account/account.component';
 import { LogoutComponent } from './components/content/logout/logout.component';
 import { EditTopicComponent } from './components/content/edit-topic/edit-topic.component';
+import { LearnTopicComponent } from './components/content/learn-topic/learn-topic.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { EditTopicComponent } from './components/content/edit-topic/edit-topic.c
     AuthenticationComponent,
     AccountComponent,
     LogoutComponent,
-    EditTopicComponent
+    EditTopicComponent,
+    LearnTopicComponent
   ],
   imports: [
     BrowserModule,

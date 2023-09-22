@@ -16,7 +16,7 @@ export class TopicsService {
     return this.httpClient.get<ITopic[]>('http://localhost:10030/api/v1/topics')
   }
 
-  getTopicById(id: number): Observable<ITopic> {
+  getTopicById(id: string): Observable<ITopic> {
     return this.httpClient.get<ITopic>(`http://localhost:10030/api/v1/topics/${id}`)
   }
 
