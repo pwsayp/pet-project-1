@@ -21,7 +21,7 @@ yarn-error.log
 /.mvn/
 
 # Ignore generated files by Angular CLI
-/dist/
+dist/
 .angular
 
 # Ignore Gradle-specific files

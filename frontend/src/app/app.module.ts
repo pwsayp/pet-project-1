@@ -12,6 +12,7 @@ import { TheoryComponent } from './components/content/theory/theory.component';
 import { PractiseComponent } from './components/content/practise/practise.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import {HeaderComponent} from "./components/main/header/header.component";
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {HeaderComponent} from "./components/main/header/header.component";
     HttpClientModule,
     FormsModule,
     NgOptimizedImage,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

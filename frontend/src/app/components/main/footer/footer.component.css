@@ -27,4 +27,20 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Version {
+  display: flex;
+  align-items: center;
+}
+
+.Version p {
+  margin-left: 10px;
+}
+
+img {
+  filter: invert(67%) sepia(57%) saturate(3229%) hue-rotate(15deg) brightness(116%) contrast(84%);
 }
