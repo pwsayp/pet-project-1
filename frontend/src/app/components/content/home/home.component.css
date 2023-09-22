@@ -1,0 +1,21 @@
+.Content {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.Content article {
+  background-color: #646669;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.Content p {
+  margin-top: 16px;
+  color: #d1d0c5;
+}
+
+.Content h1 {
+  margin: 10px 0 25px 0;
+}
