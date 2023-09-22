@@ -17,6 +17,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { AuthenticationComponent } from './components/content/authentication/authentication.component';
 import { AccountComponent } from './components/content/account/account.component';
 import { LogoutComponent } from './components/content/logout/logout.component';
+import { EditTopicComponent } from './components/content/edit-topic/edit-topic.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LogoutComponent } from './components/content/logout/logout.component';
     PractiseComponent,
     AuthenticationComponent,
     AccountComponent,
-    LogoutComponent
+    LogoutComponent,
+    EditTopicComponent
   ],
   imports: [
     BrowserModule,

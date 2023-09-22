@@ -1,0 +1,45 @@
+.Topics {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.Topics article {
+  background-color: #646669;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.Topics p {
+  color: #d1d0c5;
+}
+
+.Topics h1 {
+  margin: 10px 0 25px 0;
+}
+
+.Topic {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Topic p {
+  padding: 5px;
+  font-size: 18px;
+  color: #d1d0c5;
+}
+
+button {
+  color: #d1d0c5;
+  font-size: 24px;
+  filter: invert(95%) sepia(9%) saturate(196%) hue-rotate(17deg) brightness(86%) contrast(93%);
+  transition: filter 0.1ms ease-in-out;
+}
+
+button:hover {
+  --mat-badge-text-color: #e2b714;
+  filter: invert(67%) sepia(57%) saturate(3229%) hue-rotate(15deg) brightness(116%) contrast(84%);
+}

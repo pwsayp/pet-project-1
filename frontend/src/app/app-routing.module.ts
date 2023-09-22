@@ -6,6 +6,7 @@ import {PractiseComponent} from "./components/content/practise/practise.componen
 import {AuthenticationComponent} from "./components/content/authentication/authentication.component";
 import {AccountComponent} from "./components/content/account/account.component";
 import {LogoutComponent} from "./components/content/logout/logout.component";
+import {EditTopicComponent} from "./components/content/edit-topic/edit-topic.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'authentication', component: AuthenticationComponent },
   { path: 'account', component: AccountComponent },
   { path: 'logout', component: LogoutComponent },
+  { path: 'topics/:id/edit', component: EditTopicComponent },
 ];
 
 @NgModule({
