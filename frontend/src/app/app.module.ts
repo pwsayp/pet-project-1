@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/main/navbar/navbar.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
@@ -12,12 +11,13 @@ import {NgOptimizedImage} from "@angular/common";
 import { TheoryComponent } from './components/content/theory/theory.component';
 import { PractiseComponent } from './components/content/practise/practise.component';
 import {NgxPaginationModule} from "ngx-pagination";
+import {HeaderComponent} from "./components/main/header/header.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent,
+    HeaderComponent,
     FooterComponent,
     TheoryComponent,
     PractiseComponent
