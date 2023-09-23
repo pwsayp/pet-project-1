@@ -9,9 +9,16 @@
 </div>
 
 <div class="Pagination">
-  <ul>
-    <li *ngFor="let page of getPages()">
-      <a (click)="onPageChange(page)" [class.active]="currentPage === page">{{ page + 1 }}</a>
-    </li>
-  </ul>
+  <button (click)="onPageChange(0)" [disabled]="currentPage === 0">First</button>
+  <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 0">Previous</button>
+  <div class="Page">
+    <ul>
+      <li *ngFor="let page of getPages()">
+        <button *ngIf="page === currentPage" (click)="onPageChange(page)" [class.active]="currentPage === page">{{ page + 1 }}</button>
+      </li>
+    </ul>
+  </div>
+  <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === getPages().length - 1">Next</button>
+  <button (click)="onPageChange(getPages().length - 1)" [disabled]="currentPage === getPages().length - 1">Last</button>
 </div>
+
