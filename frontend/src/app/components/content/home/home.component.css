@@ -32,3 +32,41 @@
 .Content h1 {
   margin: 0 0 15px 0;
 }
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.Pagination ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.Pagination li {
+  margin: 0 5px;
+}
+
+.Pagination a {
+  text-decoration: none;
+  color: #d1d0c5;
+  background-color: #2c2e31;
+  border: 1px solid #d1d0c5;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Pagination a:hover {
+  border: 1px solid #2c2e31;
+  background-color: #e2b714;
+}
+
+.Pagination a.active {
+  background-color: #e2b714;
+  color: #fff;
+}
+

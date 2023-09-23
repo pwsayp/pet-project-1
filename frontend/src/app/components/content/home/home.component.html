@@ -7,3 +7,11 @@
     <p>{{ news.content }}</p>
   </article>
 </div>
+
+<div class="Pagination">
+  <ul>
+    <li *ngFor="let page of getPages()">
+      <a (click)="onPageChange(page)" [class.active]="currentPage === page">{{ page + 1 }}</a>
+    </li>
+  </ul>
+</div>

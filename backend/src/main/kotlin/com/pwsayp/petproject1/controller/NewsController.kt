@@ -2,6 +2,8 @@ package com.pwsayp.petproject1.controller
 
 import com.pwsayp.petproject1.model.News
 import com.pwsayp.petproject1.service.NewsService
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.CrossOrigin
@@ -17,7 +19,7 @@ class NewsController(
 ) {
 
     @GetMapping
-    fun getAllNews() =
-        ResponseEntity<Iterable<News>>(newsService.getAllTopics(), HttpStatus.OK)
+    fun getAllNews(pageable: Pageable) =
+        ResponseEntity<Page<News>>(newsService.getAllTopics(pageable), HttpStatus.OK)
 
 }

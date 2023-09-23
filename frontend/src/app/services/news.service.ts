@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {INews} from "../models/news";
 
@@ -12,8 +12,12 @@ export class NewsService {
     private httpClient: HttpClient
   ) {}
 
-  getAllNews(): Observable<INews[]> {
-    return this.httpClient.get<INews[]>('http://localhost:10030/api/v1/news')
+  getAllNews(page: number, size: number): Observable<INews[]> {
+    const params = new HttpParams()
+      .set('page', page.toString())
+      .set('size', size.toString());
+
+    return this.httpClient.get<INews[]>('http://localhost:10030/api/v1/news', { params })
   }
 
 }
