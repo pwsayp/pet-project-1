@@ -1,9 +1,9 @@
 <div class="Content">
-  <article *ngFor="let element of news">
+  <article *ngFor="let news of news">
     <div class="Header">
-      <h1>{{ element.title }}</h1>
-      <small class="Date">{{ element.date | date }}</small>
+      <h1>{{ news.title }}</h1>
+      <small class="Date">{{ news.date | date }}</small>
     </div>
-    <p>{{ element.content }}</p>
+    <p>{{ news.content }}</p>
   </article>
 </div>

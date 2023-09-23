@@ -19,6 +19,8 @@ import { AccountComponent } from './components/content/account/account.component
 import { LogoutComponent } from './components/content/logout/logout.component';
 import { EditTopicComponent } from './components/content/edit-topic/edit-topic.component';
 import { LearnTopicComponent } from './components/content/learn-topic/learn-topic.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { LearnTopicComponent } from './components/content/learn-topic/learn-topi
     NgOptimizedImage,
     NgxPaginationModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

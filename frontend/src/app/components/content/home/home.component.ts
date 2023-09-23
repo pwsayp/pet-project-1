@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
 
   private listNews() {
     this.newsService.getAllNews().subscribe( news => {
-      console.log(news);
       this.news = news;
     })
   }
