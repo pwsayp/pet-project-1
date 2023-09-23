@@ -21,12 +21,12 @@
 }
 
 img {
-  filter: invert(95%) sepia(9%) saturate(196%) hue-rotate(17deg) brightness(86%) contrast(93%);
+  filter: invert(43%) sepia(8%) saturate(170%) hue-rotate(177deg) brightness(88%) contrast(88%);
   transition: filter 0.1ms ease-in-out;
 }
 
 img:hover {
-  filter: invert(67%) sepia(57%) saturate(3229%) hue-rotate(15deg) brightness(116%) contrast(84%);
+  filter: invert(89%) sepia(3%) saturate(555%) hue-rotate(18deg) brightness(99%) contrast(81%);
 }
 
 .Contacts {

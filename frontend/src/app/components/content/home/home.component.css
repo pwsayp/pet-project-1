@@ -11,11 +11,24 @@
   border-radius: 5px;
 }
 
+.Content .Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.Content .Header .Date {
+  color: #d1d0c5;
+  font-size: 12px;
+  text-align: right;
+}
+
 .Content p {
   margin-top: 16px;
   color: #d1d0c5;
 }
 
 .Content h1 {
-  margin: 10px 0 25px 0;
+  margin: 0 0 15px 0;
 }

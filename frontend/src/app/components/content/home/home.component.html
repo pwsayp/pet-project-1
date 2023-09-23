@@ -1,27 +1,9 @@
 <div class="Content">
-  <article>
-    <h1>Article</h1>
-    <p>This paragraph was a waste of time and space.</p>
+  <article *ngFor="let element of news">
+    <div class="Header">
+      <h1>{{ element.title }}</h1>
+      <small class="Date">{{ element.date | date }}</small>
+    </div>
+    <p>{{ element.content }}</p>
   </article>
-  <article>
-    <h1>Article</h1>
-    <p>This paragraph was a waste of time and space.</p>
-  </article>
-  <article>
-    <h1>Article</h1>
-    <p>This paragraph was a waste of time and space.</p>
-  </article>
-  <article>
-    <h1>Article</h1>
-    <p>This paragraph was a waste of time and space.</p>
-  </article>
-  <article>
-    <h1>Article</h1>
-    <p>This paragraph was a waste of time and space.</p>
-  </article>
-  <article>
-    <h1>Article</h1>
-    <p>This paragraph was a waste of time and space.</p>
-  </article>
-
 </div>
