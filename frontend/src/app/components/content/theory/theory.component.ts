@@ -11,7 +11,7 @@ export class TheoryComponent implements OnInit {
 
   topics: ITopic[] = []
 
-  topic: ITopic = { elements: [], id: 0, title: "" }
+  topic!: ITopic;
 
   constructor(
       private topicsService: TopicsService

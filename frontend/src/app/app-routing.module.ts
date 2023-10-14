@@ -8,9 +8,11 @@ import {AccountComponent} from "./components/content/account/account.component";
 import {LogoutComponent} from "./components/content/logout/logout.component";
 import {EditTopicComponent} from "./components/content/edit-topic/edit-topic.component";
 import {LearnTopicComponent} from "./components/content/learn-topic/learn-topic.component";
+import {TopicsComponent} from "./components/topics/topics.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'topics', component: TopicsComponent },
   { path: 'theory', component: TheoryComponent },
   { path: 'practise', component: PractiseComponent },
   { path: 'authentication', component: AuthenticationComponent },

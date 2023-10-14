@@ -10,7 +10,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class LearnTopicComponent implements OnInit {
 
-  topic: ITopic = { elements: [], id: 0, title: "" };
+  topic!: ITopic;
 
   constructor(
     private topicsService: TopicsService,
@@ -26,4 +26,9 @@ export class LearnTopicComponent implements OnInit {
     })
   }
 
+  // transform(topic: ITopic): ITopicFlatNode[] {
+  //   return topic.elements.map((element) => {
+  //
+  //   })
+  // }
 }

@@ -21,6 +21,8 @@ import { EditTopicComponent } from './components/content/edit-topic/edit-topic.c
 import { LearnTopicComponent } from './components/content/learn-topic/learn-topic.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
+import {MatTreeModule} from "@angular/material/tree";
+import { TopicsComponent } from './components/topics/topics.component';
 
 @NgModule({
   declarations: [
@@ -34,20 +36,22 @@ import {MatTableModule} from "@angular/material/table";
     AccountComponent,
     LogoutComponent,
     EditTopicComponent,
-    LearnTopicComponent
+    LearnTopicComponent,
+    TopicsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    NgOptimizedImage,
-    NgxPaginationModule,
-    MatIconModule,
-    MatButtonModule,
-    MatPaginatorModule,
-    MatTableModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        NgOptimizedImage,
+        NgxPaginationModule,
+        MatIconModule,
+        MatButtonModule,
+        MatPaginatorModule,
+        MatTableModule,
+        MatTreeModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
