@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FlatTreeControl} from "@angular/cdk/tree";
 import {MatTreeFlatDataSource, MatTreeFlattener} from "@angular/material/tree";
-import {ITopic, ITopicElement} from "../../models/topic";
 import {TopicsService} from "../../services/topics.service";
+import {ITopic} from "../../models/topic";
 
 interface ITopicsNode {
   name: string;
@@ -46,10 +46,6 @@ export class TopicsComponent implements OnInit {
 
   hasChild = (_: number, node: TopicsFlatNode) => node.expandable;
 
-  rawTopics!: ITopic[];
-  convertedTopics!: ITopicsNode[];
-
-
   constructor(
     private topicsService: TopicsService
   ) {}
@@ -60,32 +56,30 @@ export class TopicsComponent implements OnInit {
 
   getTopics() {
     this.topicsService.getAllTopics().subscribe((result) => {
-      this.rawTopics = result;
-      this.dataSource.data = this.convertTopics();
+      console.log(result)
+      this.dataSource.data = this.buildTree(result);
+      console.log(this.dataSource.data)
     })
   }
 
-  convertTopics(): ITopicsNode[] {
-    return this.rawTopics.map((rawTopic) => {
-      const convertedTopic: ITopicsNode = {
-        name: rawTopic.title
-      };
+  private buildTree(topics: ITopic[]): any[] {
+    const tree: any[] = [];
 
-      if (rawTopic.elements && rawTopic.elements.length > 0) {
-        convertedTopic.children = this.convertElements(rawTopic.elements);
-      }
-
-      return convertedTopic;
-    })
-  }
-
-  private convertElements(elements: ITopicElement[]) {
-    return elements.map((element) => {
-      const convertedElement: ITopicsNode = {
-        name: `${element.first} - ${element.second}`,
-      };
-
-      return convertedElement;
+    topics.forEach((topic) => {
+      let currentNode = tree;
+      topic.categories.forEach((category) => {
+        const existingNode = currentNode.find((node) => node.name === category);
+        if (existingNode) {
+          currentNode = existingNode.children;
+        } else {
+          const newNode = { name: category, children: [] };
+          currentNode.push(newNode);
+          currentNode = newNode.children;
+        }
+      });
+      currentNode.push({ name: topic.elements, isLeaf: true });
     });
+
+    return tree;
   }
 }

@@ -2,7 +2,7 @@
   <article *ngFor="let element of topic.elements; let i = index">
     <div class="Element">
       <div class="Description">
-        <p>{{ i + 1 }}.{{ element.first}} - {{ element.second }}</p>
+        <p>{{ i + 1 }}.{{ element }}</p>
       </div>
       <div class="Actions">
         <a href="/topics/{{ topic.id }}/edit">

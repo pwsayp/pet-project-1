@@ -1,177 +1,56 @@
 {
   "topics": [
     {
-      "id": 1,
-      "title": "Make - Country",
-      "category": "Auto",
+      "id": 2,
+      "categories": [
+        "Auto",
+        "Brand",
+        "Country",
+        "Japan"
+      ],
       "elements": [
-        {
-          "first": "BMW",
-          "second": "Germany"
-        },
-        {
-          "first": "Toyota",
-          "second": "Japan"
-        },
-        {
-          "first": "Ford",
-          "second": "United States"
-        },
-        {
-          "first": "Volkswagen",
-          "second": "Germany"
-        },
-        {
-          "first": "Honda",
-          "second": "Japan"
-        },
-        {
-          "first": "Chevrolet",
-          "second": "United States"
-        },
-        {
-          "first": "Mercedes-Benz",
-          "second": "Germany"
-        },
-        {
-          "first": "Nissan",
-          "second": "Japan"
-        },
-        {
-          "first": "Audi",
-          "second": "Germany"
-        },
-        {
-          "first": "Hyundai",
-          "second": "South Korea"
-        },
-        {
-          "first": "Kia",
-          "second": "South Korea"
-        },
-        {
-          "first": "Volvo",
-          "second": "Sweden"
-        },
-        {
-          "first": "Subaru",
-          "second": "Japan"
-        },
-        {
-          "first": "Mazda",
-          "second": "Japan"
-        },
-        {
-          "first": "Porsche",
-          "second": "Germany"
-        },
-        {
-          "first": "Jaguar",
-          "second": "United Kingdom"
-        },
-        {
-          "first": "Land Rover",
-          "second": "United Kingdom"
-        },
-        {
-          "first": "Lexus",
-          "second": "Japan"
-        },
-        {
-          "first": "Tesla",
-          "second": "United States"
-        },
-        {
-          "first": "Ferrari",
-          "second": "Italy"
-        }
+        "Toyota"
       ]
     },
     {
-      "id": 2,
-      "title": "Country - Capital",
-      "category": "Geography",
+      "id": 3,
+      "categories": [
+        "Auto",
+        "Brand",
+        "Country",
+        "Germany",
+        "BMW",
+        "Logo"
+      ],
       "elements": [
-        {
-          "first": "Germany",
-          "second": "Berlin"
-        },
-        {
-          "first": "Japan",
-          "second": "Tokyo"
-        },
-        {
-          "first": "United States",
-          "second": "Washington, D.C."
-        },
-        {
-          "first": "France",
-          "second": "Paris"
-        },
-        {
-          "first": "Italy",
-          "second": "Rome"
-        },
-        {
-          "first": "United Kingdom",
-          "second": "London"
-        },
-        {
-          "first": "South Korea",
-          "second": "Seoul"
-        },
-        {
-          "first": "Sweden",
-          "second": "Stockholm"
-        },
-        {
-          "first": "Australia",
-          "second": "Canberra"
-        },
-        {
-          "first": "Russia",
-          "second": "Moscow"
-        },
-        {
-          "first": "Brazil",
-          "second": "Brasília"
-        },
-        {
-          "first": "Canada",
-          "second": "Ottawa"
-        },
-        {
-          "first": "China",
-          "second": "Beijing"
-        },
-        {
-          "first": "India",
-          "second": "New Delhi"
-        },
-        {
-          "first": "Mexico",
-          "second": "Mexico City"
-        },
-        {
-          "first": "Spain",
-          "second": "Madrid"
-        },
-        {
-          "first": "South Africa",
-          "second": "Pretoria"
-        },
-        {
-          "first": "Argentina",
-          "second": "Buenos Aires"
-        },
-        {
-          "first": "Egypt",
-          "second": "Cairo"
-        },
-        {
-          "first": "Turkey",
-          "second": "Ankara"
-        }
+        "https://example.com/bmw_logo.png"
+      ]
+    },
+    {
+      "id": 4,
+      "categories": [
+        "Auto",
+        "Brand",
+        "Country",
+        "Germany",
+        "BMW",
+        "Model"
+      ],
+      "elements": [
+        "X5",
+        "X6"
+      ]
+    },
+    {
+      "id": 5,
+      "categories": [
+        "Geography",
+        "Country",
+        "Germany",
+        "Capital"
+      ],
+      "elements": [
+        "Berlin"
       ]
     }
   ]
