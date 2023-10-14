@@ -1,5 +1,4 @@
 <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-  <!-- ... -->
   <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
     <button mat-icon-button matTreeNodeToggle>
       <mat-icon class="mat-icon-rtl-mirror">
@@ -7,10 +6,8 @@
       </mat-icon>
     </button>
     {{node.name}}
-    <ul>
-      <li *ngFor="let value of node.values">
-        {{value.name}}
-      </li>
-    </ul>
+  </mat-tree-node>
+  <mat-tree-node *matTreeNodeDef="let leaf" matTreeNodePadding>
+    {{leaf.name}}
   </mat-tree-node>
 </mat-tree>

@@ -6,6 +6,7 @@ import {ITopic} from "../../models/topic";
 
 interface ITopicsNode {
   name: string;
+  isLeaf: boolean;
   children?: ITopicsNode[];
 }
 
@@ -21,6 +22,8 @@ interface TopicsFlatNode {
   styleUrls: ['./topics.component.css']
 })
 export class TopicsComponent implements OnInit {
+
+  leafElements!: any[];
 
   private _transformer = (node: ITopicsNode, level: number): TopicsFlatNode  => {
     return {
@@ -70,16 +73,28 @@ export class TopicsComponent implements OnInit {
       topic.categories.forEach((category) => {
         const existingNode = currentNode.find((node) => node.name === category);
         if (existingNode) {
-          currentNode = existingNode.children;
+          if (existingNode.children) {
+            currentNode = existingNode.children;
+          } else {
+            existingNode.children = [];
+            currentNode = existingNode.children;
+          }
         } else {
-          const newNode = { name: category, children: [] };
+          const newNode = { name: category, isLeaf: false, children: [] };
           currentNode.push(newNode);
           currentNode = newNode.children;
         }
       });
-      currentNode.push({ name: topic.elements, isLeaf: true });
+
+      if (topic.elements && topic.elements.length > 0) {
+        for (const element of topic.elements) {
+          currentNode.push({ name: element, isLeaf: true });
+        }
+      }
     });
 
     return tree;
   }
+
+
 }
