@@ -1,0 +1,45 @@
+.tree-container {
+  background-color: #646669;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  min-height: 75vh;
+  min-width: 100%;
+}
+
+.tree-button {
+  color: #2c2e31;
+  font-size: 24px;
+  transition: filter 0.1s ease-in-out;
+}
+
+.tree-button:hover {
+  --mat-badge-text-color: #e2b714;
+  filter: invert(67%) sepia(57%) saturate(3229%) hue-rotate(15deg) brightness(116%) contrast(84%);
+}
+
+.tree-element {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.tree-element p {
+  padding: 5px;
+  font-size: 18px;
+  color: #d1d0c5;
+}
+
+.tree {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 18px;
+  color: #d1d0c5;
+}
+
